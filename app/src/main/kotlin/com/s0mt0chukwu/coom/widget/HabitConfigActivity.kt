@@ -32,14 +32,14 @@ class CoomConfigActivity: BaseActivity() {
             override fun onClick(position: Int) {
                 alert("${mAdapter.getItem(position).title} ${applicationContext.getString(R.string.check_coom_name)}"){
                     yesButton {
-                        // bind widget
+                        // init bind widget
                         var coom = coomManager.getcooms(applicationContext)[position]
                         coomWidgetManager.addWidget(applicationContext, mAppWidgetId, coom.id)
 
                         mRemoteView.setViewVisibility(R.id.pb_widget_loading, View.GONE)
                         mRemoteView.setInt(R.id.iv_widget_coom_background, "setColorFilter", coom.color)
 
-                        // bind view
+                        // init bind view
                         mRemoteView.setTextViewText(R.id.tv_widget_coom_title, coom.title)
                         if(!coom.days.isEmpty()) {
                             if(coom.days[0] == StringUtil.getCurrentDay())  {
@@ -51,8 +51,7 @@ class CoomConfigActivity: BaseActivity() {
                             mRemoteView.setViewVisibility(R.id.iv_widget_coom_select, View.GONE)
                         }
 
-                        // click event
-                        // PendingIntent.getBroadcast로 하는 이유는 broadcast가 아닌 activity로 하면 터치가 안먹힘
+                        // init event 
                         var listener = PendingIntent.getBroadcast(
                                 applicationContext,
                                 0,
@@ -87,7 +86,7 @@ class CoomConfigActivity: BaseActivity() {
 
         for(item in coomManager.getcooms(this)) mAdapter.addItem(item)
 
-        // widget
+        // added widget
         var mExtras = intent.extras
         if(mExtras != null) mAppWidgetId = mExtras.
                 getInt(AppWidgetManager.EXTRA_APPWIDGET_ID, AppWidgetManager.INVALID_APPWIDGET_ID)
