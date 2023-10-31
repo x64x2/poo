@@ -3,7 +3,7 @@
 
 Coomcide is an app that allows you to track and monitor your masturbation habits. This app is designed to provide users with insights into their masturbation streaks.
 
- **fork me daddy**
+ **Fork Me Daddy**
 
 # Installation
 
