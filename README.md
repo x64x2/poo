@@ -14,5 +14,5 @@ Coomcide is a Kotlin-based application that allows users to track and monitor th
 
 ## Contributing
 
-We welcome contributions from the community! If you would like to get involved, please fork the repository, make changes, and submit pull requests.
+If you would like to get involved, please fork the repository, make changes, and submit pull requests.
 
