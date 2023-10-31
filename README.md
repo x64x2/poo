@@ -1,16 +1,17 @@
  
-# Introduction
+# Intro
 
-Coomcide is a Kotlin-based application that allows users to track and monitor their masturbation habits. The app is designed to provide users with insights into their masturbation streaks.
+Coomcide is an app that allows you to track and monitor your masturbation habits. This app is designed to provide users with insights into their masturbation streaks.
+
+>  fork me daddy
 
 # Installation
 
-    Clone the repo
-    Install Android Studio
+    Clone repo
     Open the project in Android Studio and sync the Gradle files.
     Build and run the app on an emulator or physical device.
 
-- Note: This is a pre-alpha release of the Coomcide, and it may not be fully functional or stable at this stage. It is intended for early adopters and    contributors who want to help shape the development process.
+- Note: This is a pre-alpha release, and it may not be fully functional or stable at this stage.
 
 ## Contributing
 
