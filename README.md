@@ -4,9 +4,7 @@
 Coomcide is an app that allows you to track and monitor your masturbation habits. This app is designed to provide users with insights into their masturbation streaks.
 
  **Fork Me Daddy**
-
-# Installation
-
+ 
     Clone repo
     Open the project in Android Studio and sync the Gradle files.
     Build and run the app on an emulator or physical device.
